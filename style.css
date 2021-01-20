@@ -1,0 +1,38 @@
+body {
+	background-color:	#000000;
+}
+
+#window {
+    text-align:			center;
+    margin: 			0;
+    position: 			fixed;
+    top: 				50%;
+    left: 				50%;
+    transform: 			translate(-50%, -50%);
+	padding:			50px;
+	
+
+    background-color: 	white;
+    border-radius:		2px;
+    box-shadow:			0 0 15px;
+    font-size:			20px;
+    font-weight:		bold;
+	
+	border-radius: 50px;
+}
+
+#answer {
+    font-size:			15px;
+	padding-bottom: 5px;
+}
+
+.option {
+	display: block;
+    border: 1px solid green;
+    background-color: #8ab2ff;
+    font-size: 20px;
+    border-radius: 20px;
+    width: 100%;
+    height: 40px;
+    overflow: auto;
+}
