@@ -19,7 +19,7 @@
         let getPage=(key)=>{
             let page=answers[key]||answers["done_no_help"];//find page.  If missing fall back to couldn't help
             $("#answer").html(page.answer||"");
-            $("#question").html(page.question);
+            $("#question").html(page.question||"");
             let html="";
             for (let key in page.options) {
                 html+='<button class="option" key="'+key+'">'+page.options[key]+'</button>';
