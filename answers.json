@@ -1,0 +1,228 @@
+{
+  "start":  {
+    "question": "What are you having trouble with?",
+    "options": {
+      "wallet": "Problems with my wallet",
+      "exchange": "Problems with an exchange",
+      "done_no_help": "Other"
+    }
+  },
+  "exchange": {
+    "question": "What exchange?",
+    "options": {
+      "exchange_poloniex_delist": "Poloniex",
+      "exchange_other": "Other"
+    }
+  },
+  "exchange_poloniex_delist": {
+    "answer": "Poleniex delisted DigiByte.  There is no way to recover your coins now.  Your only chance and it is a small one is to contact a lawyer",
+    "question": "Do you still need help?",
+    "options": {
+      "done_no_help": "Yes",
+      "done": "No"
+    }
+  },
+  "exchange_other": {
+    "question": "What problem do you have?",
+    "options": {
+      "format_receive": "Invalid address when I try to withdraw DGB",
+      "format_send": "Invalid address when I try to deposit DGB",
+      "exchange_cant_help": "Other"
+    }
+  },
+  "exchange_cant_help": {
+    "answer": "You will need to contact the exchange for assistance.",
+    "question": "Do you still need help?",
+    "options": {
+      "done_no_help": "Yes",
+      "done": "No"
+    }
+  },
+  "format_receive": {
+    "answer": "The person/company trying to send you funds is using outdated code.  Try providing them a legacy address(one that starts with D).  If your wallet does not have this option download Coinomi and use it.",
+    "question": "Do you still need help?",
+    "options": {
+      "done_no_help": "Yes",
+      "done": "No"
+    }
+  },
+  "format_send": {
+    "answer": "The wallet you are using is outdated.  Recommend installing Coinomi as it supports all modern address formats.",
+    "question": "Do you still need help?",
+    "options": {
+      "done_no_help": "Yes",
+      "done": "No"
+    }
+  },
+  "wallet": {
+    "question": "Is the wallet DigiByte Go?",
+    "options": {
+      "dead_go": "Yes",
+      "wallet_not_go": "No"
+    }
+  },
+  "dead_go": {
+    "answer": "DigiByte Go is dead.  Recommend you download Coinomi or another wallet and use <a href='https://DigiSweep.digiassetX.com'>DigiSweep.digiassetX.com</a> to recover your funds",
+    "question": "Do you still need help?",
+    "options": {
+      "done_no_help": "Yes",
+      "done": "No"
+    }
+  },
+  "wallet_not_go": {
+    "question": "Are you having difficulty sending funds?",
+    "options": {
+      "wallet_probable_miner": "Yes",
+      "wallet_no_small_utxo": "No"
+    }
+  },
+  "wallet_probable_miner": {
+    "question": "Have you mined to the wallet or received a lot of times without sending?",
+    "options": {
+      "wallet_miner": "Yes",
+      "wallet_no_small_utxo": "No"
+    }
+  },
+  "wallet_miner": {
+    "answer": "Your wallet is probably no longer functional because there are to many UTXOs.  <a href='https://DigiSweep.digiassetX.com'>DigiSweep.digiassetX.com</a> can be used to move all your funds to a new address and fix this problem.",
+    "question": "Did this fix your problem?",
+    "options": {
+      "done": "Yes",
+      "wallet_no_small_utxo": "No"
+    }
+  },
+  "wallet_no_small_utxo": {
+    "question": "What wallet are you using?",
+    "options": {
+      "dead_go":  "DigiByte Go",
+      "wallet_mobile": "DigiByte Mobile",
+      "wallet_core": "DigiByte Core",
+      "wallet_other": "Other"
+    }
+  },
+  "wallet_mobile": {
+    "question": "What is your problem?",
+    "options": {
+      "wallet_asset_cant_send": "Can't send a DigiAsset to someone",
+      "wallet_mobile_sync": "Wallet won't sync",
+      "done_no_help": "Other"
+    }
+  },
+  "wallet_asset_cant_send": {
+    "question": "Do you have any DigiByte in the Wallet?",
+    "options": {
+      "wallet_asset_cant_send2": "Yes",
+      "wallet_asset_no_funds": "No"
+    }
+  },
+  "wallet_asset_no_funds": {
+    "answer": "You must have at least 0.001 DGB in your wallet to send DigiAssets",
+    "question": "Do you still have a problem?",
+    "options": {
+      "done_no_help": "Yes",
+      "done": "No"
+    }
+  },
+  "wallet_asset_cant_send2": {
+    "question": "Does the address you are trying to send to start with dgb1?",
+    "options": {
+      "wallet_asset_ask_legacy": "Yes",
+      "done_no_help": "No"
+    }
+  },
+  "wallet_asset_ask_legacy": {
+    "answer": "Ask the person you are trying to send to, to get a legacy address.  It will show under qr code on there phone.",
+    "question": "Do you still need help?",
+    "options": {
+      "done_no_help": "Yes",
+      "done": "No"
+    }
+  },
+  "wallet_mobile_sync": {
+    "answer": "This is likely a DNS issue caused by a lot of budget / freely provided home routers. You want to do the following steps:\n\nTurn off your WiFi on your phone\nPower off your device\nPower it back on while connected to JUST mobile-data such as a 3G / 4G data connection\nFire up the DigiByte mobile app and wait for the syncing to begin\nOnce syncing has begun, you can re-join your WiFi\nYou must do these steps in this order so that when your phone powers on, it asks your mobile-carrier for DNS. Often times home routers will keep providing stale DNS entries to devices such as Cellphones on WiFi, meaning even if you reboot your phone while on WiFi you still won't have much luck.\n\nIt should begin to sync within a couple of seconds once you have re-opened the app again.\n\nShould you still have issues even following this troubleshooting steps above, you can also go to Menu -> Settings -> Sync blockchain, and it will perform a full re-sync. This will not affect your funds, but will take approx 20-30 minutes.",
+    "question": "Do you still need help?",
+    "options": {
+      "done_no_help": "Yes",
+      "done": "No"
+    }
+  },
+  "wallet_core": {
+    "question": "What problem are you having?",
+    "options": {
+      "wallet_core_less_then_have": "Says I don't have enough funds but I do",
+      "wallet_core_miner": "Says transaction to big",
+      "wallet_core_old": "Wallet wont sync",
+      "wallet_core_update": "Where do I get update?"
+    }
+  },
+  "wallet_core_less_then_have": {
+    "answer": "This occasionally happens for people that have really old wallets.  To fix download Coinomi or another wallet on your phone then in you",
+    "question": "Do you still need help?",
+    "options": {
+      "done_no_help": "Yes",
+      "done": "No"
+    }
+  },
+  "wallet_core_miner": {
+    "answer": "You likely have to many UTXOs in your wallet.  You can fix this by sending a smaller amount to yourself a few times or if you have been mining you may want to go to the console and type 'dumpprivkey' followed by the address you where mining to.  Then use <a href='https://DigiSweep.digiassetX.com'>DigiSweep.digiassetX.com</a> to send the funds from the provided private key back to your wallet.",
+    "question": "Do you still need help?",
+    "options": {
+      "done_no_help": "Yes",
+      "done": "No"
+    }
+  },
+  "wallet_core_old": {
+    "answer": "Shut down your core wallet.  Once shut down continue bellow",
+    "question": "What operating system are you using?",
+    "options": {
+      "delete_blocks_windows": "Windows",
+      "delete_blocks_mac": "macOS",
+      "delete_blocks_linux": "Linux"
+    }
+  },
+  "wallet_core_update": {
+    "answer": "Download the newest wallet at <a href='https://github.com/digibyte/digibyte/releases'>https://github.com/digibyte/digibyte/releases</a>",
+    "question": "Do you still need help?",
+    "options": {
+      "done_no_help": "Yes",
+      "done": "No"
+    }
+  },
+  "delete_blocks_windows": {
+    "answer": "Open a file explorer and in the address bar type %appData%\\DigiByte then delete the blocks and indexes folders if they exist.  Install the newest wallet and start it up if you haven't already.",
+    "question": "Do you need help installing the newest wallet?",
+    "options": {
+      "wallet_core_update": "Yes",
+      "done": "No"
+    }
+  },
+  "delete_blocks_mac": {
+    "answer": "Goto ~/Library/Application Support/DigiByte/ then delete the blocks and indexes folders if they exist.  Install the newest wallet and start it up if you haven't already.",
+    "question": "Do you need help installing the newest wallet?",
+    "options": {
+      "wallet_core_update": "Yes",
+      "done": "No"
+    }
+  },
+  "delete_blocks_linux": {
+    "answer": "goto ~/.digibyte/ then delete the blocks and indexes folders if they exist.  Install the newest wallet and start it up if you haven't already.",
+    "question": "Do you need help installing the newest wallet?",
+    "options": {
+      "wallet_core_update": "Yes",
+      "done": "No"
+    }
+  },
+  "wallet_other": {
+    "question": "Does it say invalid address?",
+    "options": {
+      "format_send": "Yes",
+      "done_no_help": "No"
+    }
+  },
+  "done": {
+    "answer": "Glad we could help you."
+  },
+  "done_no_help": {
+    "answer": "Sorry this could not help you.  <br>Warning before continuing be warned that scammers are everywhere.  Nevere accept support in a private message even if they look like an admin.  Many eyes keep everyone honest.  Please go to <a href='https://t.me/DGBSupport'>DGBSupport</a> on telegram and ask your question."
+  }
+}

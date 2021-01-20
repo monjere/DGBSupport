@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DigiByte Support</title>
+</head>
+<body>
+    <div id="answer">Loading</div>
+    <div id="question"></div>
+    <div id="options"></div>
+    <script
+            src="https://code.jquery.com/jquery-2.1.4.min.js"
+            integrity="sha256-8WqyJLuWKRBVhxXIL1jBDD7SDxU936oZkCnxQbWwJVw="
+            crossorigin="anonymous"></script>
+    <script>
+        let answers={};
+
+
+        let getPage=(key)=>{
+            let page=answers[key]||answers["done_no_help"];//find page.  If missing fall back to couldn't help
+            $("#answer").html(page.answer||"");
+            $("#question").html(page.question);
+            let html="";
+            for (let key in page.options) {
+                html+='<button class="option" key="'+key+'">'+page.options[key]+'</button>';
+            }
+            $("#options").html(html);
+        }
+
+        //handle option click
+        $(document).on('click','.option',function(){
+            let key=$(this).attr('key');
+            getPage(key);
+        });
+
+        //load data and start
+        $.getJSON('answers.json').then((data)=>{
+            answers=data;
+            getPage("start");
+        });
+    </script>
+</body>
+</html>
