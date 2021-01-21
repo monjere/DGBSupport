@@ -152,11 +152,20 @@
       "wallet_core_less_then_have": "Says I don't have enough funds but I do",
       "wallet_core_miner": "Says transaction to big",
       "wallet_core_old": "Wallet wont sync",
-      "wallet_core_update": "Where do I get update?"
+      "wallet_core_update": "Where do I get update?",
+      "wallet_core_restore": "How do i restore a core wallet?"
     }
   },
   "wallet_core_less_then_have": {
-    "answer": "This occasionally happens for people that have really old wallets.  To fix download Coinomi or another wallet on your phone then in you",
+    "answer": "This occasionally happens for people that have really old wallets.  First try opening the debug console and running <span class='code'>rescanblockchain</span> then wait for it to fully sync.",
+    "question": "Did this work??",
+    "options": {
+      "done": "Yes",
+      "wallet_core_less_then_have2": "No"
+    }
+  },
+  "wallet_core_less_then_have2": {
+    "answer": "Since that didn't work download Coinomi or another wallet on your phone then in the debug console run <span class='code'>dumpwallet filename</span> to save your private keys to a file.  Open the file in a text editor and use either Coinomi's sweep function or <a href='https://DigiSweep.digiassetX.com'>https://DigiSweep.digiassetX.com</a> to sweep your funds to the new wallet.",
     "question": "Do you still need help?",
     "options": {
       "done_no_help": "Yes",
@@ -164,10 +173,42 @@
     }
   },
   "wallet_core_miner": {
-    "answer": "You likely have to many UTXOs in your wallet.  You can fix this by sending a smaller amount to yourself a few times or if you have been mining you may want to go to the console and type 'dumpprivkey' followed by the address you where mining to.  Then use <a href='https://DigiSweep.digiassetX.com'>DigiSweep.digiassetX.com</a> to send the funds from the provided private key back to your wallet.",
+    "answer": "You likely have to many UTXOs in your wallet.  You can fix this by sending a smaller amount to yourself a few times or if you have been mining you may want to go to the console and type <span class='code'>dumpprivkey miningaddress</span>.  Then use <a href='https://DigiSweep.digiassetX.com'>DigiSweep.digiassetX.com</a> to send the funds from the provided private key back to your wallet.",
     "question": "Do you still need help?",
     "options": {
       "done_no_help": "Yes",
+      "done": "No"
+    }
+  },
+  "wallet_core_restore": {
+    "question": "What operating system are you running?",
+    "options": {
+      "core_restore_windows": "Windows",
+      "core_restore_mac": "macOS",
+      "core_restore_linux": "Linux"
+    }
+  },
+  "core_restore_windows": {
+    "answer": "Open a file explorer and in the address bar type <span class='code'>%appData%\\DigiByte</span> then copy your wallet.dat file to this folder.(If you named it something else rename it to wallet.dat)",
+    "question": "Do you need help installing the newest wallet?",
+    "options": {
+      "wallet_core_update": "Yes",
+      "done": "No"
+    }
+  },
+  "core_restore_mac": {
+    "answer": "Goto <span class='code'>~/Library/Application Support/DigiByte/</span> then copy your wallet.dat file to this folder.(If you named it something else rename it to wallet.dat)",
+    "question": "Do you need help installing the newest wallet?",
+    "options": {
+      "wallet_core_update": "Yes",
+      "done": "No"
+    }
+  },
+  "core_restore_linux": {
+    "answer": "goto <span class='code'>~/.digibyte/</span> then copy your wallet.dat file to this folder.(If you named it something else rename it to wallet.dat)",
+    "question": "Do you need help installing the newest wallet?",
+    "options": {
+      "wallet_core_update": "Yes",
       "done": "No"
     }
   },
@@ -189,7 +230,7 @@
     }
   },
   "delete_blocks_windows": {
-    "answer": "Open a file explorer and in the address bar type %appData%\\DigiByte then delete the blocks and indexes folders if they exist.  Install the newest wallet and start it up if you haven't already.",
+    "answer": "Open a file explorer and in the address bar type <span class='code'>%appData%\\DigiByte</span> then delete the blocks and indexes folders if they exist.  Install the newest wallet and start it up if you haven't already.",
     "question": "Do you need help installing the newest wallet?",
     "options": {
       "wallet_core_update": "Yes",
@@ -197,7 +238,7 @@
     }
   },
   "delete_blocks_mac": {
-    "answer": "Goto ~/Library/Application Support/DigiByte/ then delete the blocks and indexes folders if they exist.  Install the newest wallet and start it up if you haven't already.",
+    "answer": "Goto <span class='code'>~/Library/Application Support/DigiByte/</span> then delete the blocks and indexes folders if they exist.  Install the newest wallet and start it up if you haven't already.",
     "question": "Do you need help installing the newest wallet?",
     "options": {
       "wallet_core_update": "Yes",
@@ -205,7 +246,7 @@
     }
   },
   "delete_blocks_linux": {
-    "answer": "goto ~/.digibyte/ then delete the blocks and indexes folders if they exist.  Install the newest wallet and start it up if you haven't already.",
+    "answer": "goto <span class='code'>~/.digibyte/</span> then delete the blocks and indexes folders if they exist.  Install the newest wallet and start it up if you haven't already.",
     "question": "Do you need help installing the newest wallet?",
     "options": {
       "wallet_core_update": "Yes",
