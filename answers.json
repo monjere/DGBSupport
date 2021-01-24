@@ -157,15 +157,7 @@
     }
   },
   "wallet_core_less_then_have": {
-    "answer": "This occasionally happens for people that have really old wallets.  First try opening the debug console and running <span class='code'>rescanblockchain</span> then wait for it to fully sync.",
-    "question": "Did this work??",
-    "options": {
-      "done": "Yes",
-      "wallet_core_less_then_have2": "No"
-    }
-  },
-  "wallet_core_less_then_have2": {
-    "answer": "Since that didn't work download Coinomi or another wallet on your phone then in the debug console run <span class='code'>dumpwallet filename</span> to save your private keys to a file.  Open the file in a text editor and use either Coinomi's sweep function or <a href='https://DigiSweep.digiassetX.com'>https://DigiSweep.digiassetX.com</a> to sweep your funds to the new wallet.",
+    "answer": "This occasionally happens for people that have really old wallets.  Download Coinomi or another wallet on your phone then in the debug console run <span class='code'>walletpassphrase yourpassword 60</span> to unlock your wallet then <span class='code'>dumpwallet filename</span> to save your private keys to a file.  Open the file in a text editor and use either Coinomi's sweep function or <a href='https://DigiSweep.digiassetX.com'>https://DigiSweep.digiassetX.com</a> to sweep your funds to the new wallet.",
     "question": "Do you still need help?",
     "options": {
       "done_no_help": "Yes",
