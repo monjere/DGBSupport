@@ -1,5 +1,12 @@
 body {
-	background-color:	#000000;
+    height: 100vh;
+    margin: 0;
+
+    background: #1e5799; /* Old browsers */
+    background: -moz-linear-gradient(45deg,  #1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg,  #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg,  #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
 #window {
@@ -21,21 +28,43 @@ body {
 	border-radius: 50px;
 }
 
+#question{
+    font-family:'Courier New', Courier, monospace;
+    padding: 0 0 1rem 0;
+}
+
 #answer {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size:			15px;
 	padding-bottom: 5px;
 }
 
+#answer a{
+    color: #207cca;
+    text-decoration: none;
+    font-weight:700;
+}
+#answer a:visited{
+    color:#207cca;
+}
+
 .option {
 	display: block;
-    border: 1px solid green;
-    background-color: #8ab2ff;
+    border: 1px solid #1e5799;
+    background-color: #2989d8;
     font-size: 20px;
     border-radius: 20px;
     width: 100%;
     height: 40px;
     overflow: auto;
     margin: 5px;
+}
+.option:hover{
+    cursor: pointer;
+    transform: scale(.98);
+}
+.option:focus{
+    outline: none;
 }
 .code {
     font-family: "Courier New";
@@ -44,6 +73,20 @@ body {
     border-width: thin;
     border-color: black;
     padding: 0px 5px;
+}
+
+#dgb-d{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+h2#troubleshooting{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:white;
+    position:fixed;
+    bottom:5px;
+    left:50%;
+    transform:translate(-50%);
 }
 
 @media only screen and (max-width: 600px) {
