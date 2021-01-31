@@ -29,6 +29,15 @@
                 html+='<button class="option" key="'+key+'">'+page.options[key]+'</button>';
             }
             $("#options").html(html);
+
+            //if not start or end add the page to url
+            let url=window.location.href;
+            let last=url;
+            let end=url.indexOf('#');
+            if (end>0) url = url.substr(0,end); //remove everything after and including # if present
+            url+="#"+key;
+            console.log(url);
+            if (url!==last) window.location.replace(url);
         }
 
         //handle option click
@@ -39,8 +48,18 @@
 
         //load data and start
         $.getJSON('answers.json').then((data)=>{
+            //save answers
             answers=data;
-            getPage("start");
+
+            //find what page to load
+            let url=window.location.href;
+            let end=url.indexOf('#');
+            let key="start";
+            if (end>0) key = url.substr(end + 1);
+            if (answers[key]===undefined) key=start;      //if page doesn't exist go to start
+
+            //load page
+            getPage(key);
         });
     </script>
         <img id="dgb-d" src="DGB.svg" alt="" width="45px">

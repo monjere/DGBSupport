@@ -70,42 +70,206 @@
     }
   },
   "wallet_not_go": {
-    "question": "Are you having difficulty sending funds?",
+    "question": "What problem are you having?",
     "options": {
-      "wallet_probable_miner": "Yes",
-      "wallet_no_small_utxo": "No"
+      "wallet_cant_recover": "Can't recover my wallet",
+      "wallet_cant_send": "Can't send",
+      "wallet_not_synced": "Not all funds showing",
+      "wallet_wont_load": "Wallet takes forever to load",
+      "wallet_wont_sync": "Wallet wont sync",
+      "wallet_core_update": "Upgrading Core Wallet",
+      "done_no_help": "Other"
     }
   },
-  "wallet_probable_miner": {
-    "question": "Have you mined to the wallet or received a lot of times without sending?",
+  "wallet_cant_recover": {
+    "question": "What wallet type do you have?",
     "options": {
-      "wallet_miner": "Yes",
-      "wallet_no_small_utxo": "No"
+      "wallet_bip39": "Mobile/Hardware(12 to 24 word recovery)",
+      "wallet_core_restore": "Core(wallet.dat file)"
+    }
+  },
+  "wallet_bip39": {
+    "question": "What problem are you having?",
+    "options": {
+      "wallet_bip39_invalid_word": "Says words are invalid",
+      "wallet_bip39_standards": "Recovered on a different wallet and balance is 0",
+      "done_no_help": "Other"
+    }
+  },
+  "wallet_bip39_invalid_word": {
+    "answer": "This is usually a result of typing a word in incorrectly.  Please make sure all the words are spelt exactly the same as found on this <a href='https://github.com/bitcoin/bips/tree/master/bip-0039' target='_blank'>word list</a>.  Accents are important if present.",
+    "question": "Do you still need help?",
+    "options": {
+      "done_no_help": "Yes",
+      "done": "No"
+    }
+  },
+  "wallet_bip39_standards": {
+    "question": "What wallet where you using before?",
+    "options": {
+      "wallet_bip39_standards_digibyte_mobile": "DigiByte Mobile",
+      "dead_go": "DigiByte Go",
+      "wallet_bip39_standards_compliant": "Other"
+    }
+  },
+  "wallet_bip39_standards_digibyte_mobile": {
+    "answer": "Unfortunately DigiByte Mobile is not a standard compliant wallet.  You can only restore funds from DigiByte Mobile on DigiByte mobile or use <a href='https://DigiSweep.digiassetX.com'>DigiSweep</a> to move to your new wallet",
+    "question": "Do you still need help?",
+    "options": {
+      "done_no_help": "Yes",
+      "done": "No"
+    }
+  },
+  "wallet_bip39_standards_compliant": {
+    "answer": "Your old wallet was likely standard compliant.  If your new wallet does not see the funds you should try using Coinomi instead.",
+    "question": "Do you still need help?",
+    "options": {
+      "done_no_help": "Yes",
+      "done": "No"
+    }
+  },
+  "wallet_core_restore": {
+    "question": "What operating system are you running?",
+    "options": {
+      "wallet_core_restore_windows": "Windows",
+      "wallet_core_restore_mac": "macOS",
+      "wallet_core_restore_linux": "Linux"
+    }
+  },
+  "wallet_core_restore_windows": {
+    "answer": "Open a file explorer and in the address bar type <span class='code'>%appData%\\DigiByte</span> then copy your wallet.dat file to this folder.(If you named it something else rename it to wallet.dat)",
+    "question": "Do you need help installing the newest wallet?",
+    "options": {
+      "wallet_core_update": "Yes",
+      "done": "No"
+    }
+  },
+  "wallet_core_restore_mac": {
+    "answer": "Goto <span class='code'>~/Library/Application Support/DigiByte/</span> then copy your wallet.dat file to this folder.(If you named it something else rename it to wallet.dat)",
+    "question": "Do you need help installing the newest wallet?",
+    "options": {
+      "wallet_core_update": "Yes",
+      "done": "No"
+    }
+  },
+  "wallet_core_restore_linux": {
+    "answer": "goto <span class='code'>~/.digibyte/</span> then copy your wallet.dat file to this folder.(If you named it something else rename it to wallet.dat)",
+    "question": "Do you need help installing the newest wallet?",
+    "options": {
+      "wallet_core_update": "Yes",
+      "done": "No"
+    }
+  },
+  "wallet_core_update": {
+    "answer": "Download the newest wallet at <a href='https://github.com/digibyte/digibyte/releases'>https://github.com/digibyte/digibyte/releases</a>",
+    "question": "Have you run the wallet since the last fork?(July 2019)",
+    "options": {
+      "wallet_core_stuck": "Yes",
+      "done": "No"
+    }
+  },
+  "wallet_wont_load": {
+    "question": "What wallet are you using?",
+    "options": {
+      "wallet_core_stuck": "Core",
+      "done_no_help": "Other"
+    }
+  },
+  "wallet_core_stuck": {
+    "answer": "Shut down your core wallet.  Once shut down continue bellow",
+    "question": "What operating system are you using?",
+    "options": {
+      "wallet_core_delete_blocks_windows": "Windows",
+      "wallet_core_delete_blocks_mac": "macOS",
+      "wallet_core_delete_blocks_linux": "Linux"
+    }
+  },
+  "wallet_core_delete_blocks_windows": {
+    "answer": "Open a file explorer and in the address bar type <span class='code'>%appData%\\DigiByte</span> then delete the blocks and indexes folders if they exist.  Install the newest wallet and start it up if you haven't already.",
+    "question": "Do you still need help?",
+    "options": {
+      "done_no_help": "Yes",
+      "done": "No"
+    }
+  },
+  "wallet_core_delete_blocks_mac": {
+    "answer": "Goto <span class='code'>~/Library/Application Support/DigiByte/</span> then delete the blocks and indexes folders if they exist.  Install the newest wallet and start it up if you haven't already.",
+    "question": "Do you still need help?",
+    "options": {
+      "done_no_help": "Yes",
+      "done": "No"
+    }
+  },
+  "wallet_core_delete_blocks_linux": {
+    "answer": "goto <span class='code'>~/.digibyte/</span> then delete the blocks and indexes folders if they exist.  Install the newest wallet and start it up if you haven't already.",
+    "question": "Do you still need help?",
+    "options": {
+      "done_no_help": "Yes",
+      "done": "No"
+    }
+  },
+  "wallet_not_synced": {
+    "question": "Have you tried syncing the waller?",
+    "options": {
+      "wallet_wont_sync": "No",
+      "wallet_core_less_then_have": "Yes: I was using a really old core wallet",
+      "done_no_help": "Yes: Other"
+    }
+  },
+  "wallet_wont_sync": {
+    "question": "What wallet are you using?",
+    "options": {
+      "wallet_wont_sync_mobile": "DigiByte Mobile",
+      "wallet_core_update": "Core Older then 7.17.2",
+      "wallet_core_stuck": "Core Version 7.17.2",
+      "done_no_help": "Other"
+    }
+  },
+  "wallet_wont_sync_mobile": {
+    "answer": "This is likely a DNS issue caused by a lot of budget / freely provided home routers. You want to do the following steps:\n\nTurn off your WiFi on your phone\nPower off your device\nPower it back on while connected to JUST mobile-data such as a 3G / 4G data connection\nFire up the DigiByte mobile app and wait for the syncing to begin\nOnce syncing has begun, you can re-join your WiFi\nYou must do these steps in this order so that when your phone powers on, it asks your mobile-carrier for DNS. Often times home routers will keep providing stale DNS entries to devices such as Cellphones on WiFi, meaning even if you reboot your phone while on WiFi you still won't have much luck.\n\nIt should begin to sync within a couple of seconds once you have re-opened the app again.\n\nShould you still have issues even following this troubleshooting steps above, you can also go to Menu -> Settings -> Sync blockchain, and it will perform a full re-sync. This will not affect your funds, but will take approx 20-30 minutes.",
+    "question": "Do you still need help?",
+    "options": {
+      "done_no_help": "Yes",
+      "done": "No"
+    }
+  },
+  "wallet_core_less_then_have": {
+    "answer": "Download Coinomi or another wallet on your phone then in the debug console run <span class='code'>walletpassphrase yourpassword 60</span> to unlock your wallet then <span class='code'>dumpwallet filename</span> to save your private keys to a file.  Open the file in a text editor and use either Coinomi's sweep function or <a href='https://DigiSweep.digiassetX.com'>https://DigiSweep.digiassetX.com</a> to sweep your funds to the new wallet.",
+    "question": "Do you still need help?",
+    "options": {
+      "done_no_help": "Yes",
+      "done": "No"
+    }
+  },
+  "wallet_cant_send": {
+    "question": "There are a few reasons this may be please pick the one that best applies:",
+    "options": {
+      "wallet_miner": "I mined to the wallet or received lots of small transactions",
+      "format_send": "Says address I am sending to is invalid",
+      "wallet_asset_cant_send": "Trying to send a DigiAsset"
     }
   },
   "wallet_miner": {
+    "question": "What wallet are you using?",
+    "options": {
+      "wallet_miner_core": "Core",
+      "wallet_miner_other": "Other"
+    }
+  },
+  "wallet_miner_core": {
+    "answer": "You likely have to many UTXOs in your wallet.  You can fix this by sending a smaller amount to yourself a few times or if you have been mining you may want to go to the console and type <span class='code'>dumpprivkey miningaddress</span>.  Then use <a href='https://DigiSweep.digiassetX.com'>DigiSweep.digiassetX.com</a> to send the funds from the provided private key back to your wallet.",
+    "question": "Do you still need help?",
+    "options": {
+      "done_no_help": "Yes",
+      "done": "No"
+    }
+  },
+  "wallet_miner_other": {
     "answer": "Your wallet is probably no longer functional because there are to many UTXOs.  <a href='https://DigiSweep.digiassetX.com'>DigiSweep.digiassetX.com</a> can be used to move all your funds to a new address and fix this problem.",
     "question": "Did this fix your problem?",
     "options": {
       "done": "Yes",
-      "wallet_no_small_utxo": "No"
-    }
-  },
-  "wallet_no_small_utxo": {
-    "question": "What wallet are you using?",
-    "options": {
-      "dead_go":  "DigiByte Go",
-      "wallet_mobile": "DigiByte Mobile",
-      "wallet_core": "DigiByte Core",
-      "wallet_other": "Other"
-    }
-  },
-  "wallet_mobile": {
-    "question": "What is your problem?",
-    "options": {
-      "wallet_asset_cant_send": "Can't send a DigiAsset to someone",
-      "wallet_mobile_sync": "Wallet won't sync",
-      "done_no_help": "Other"
+      "wallet_cant_send": "No"
     }
   },
   "wallet_asset_cant_send": {
@@ -138,120 +302,9 @@
       "done": "No"
     }
   },
-  "wallet_mobile_sync": {
-    "answer": "This is likely a DNS issue caused by a lot of budget / freely provided home routers. You want to do the following steps:\n\nTurn off your WiFi on your phone\nPower off your device\nPower it back on while connected to JUST mobile-data such as a 3G / 4G data connection\nFire up the DigiByte mobile app and wait for the syncing to begin\nOnce syncing has begun, you can re-join your WiFi\nYou must do these steps in this order so that when your phone powers on, it asks your mobile-carrier for DNS. Often times home routers will keep providing stale DNS entries to devices such as Cellphones on WiFi, meaning even if you reboot your phone while on WiFi you still won't have much luck.\n\nIt should begin to sync within a couple of seconds once you have re-opened the app again.\n\nShould you still have issues even following this troubleshooting steps above, you can also go to Menu -> Settings -> Sync blockchain, and it will perform a full re-sync. This will not affect your funds, but will take approx 20-30 minutes.",
-    "question": "Do you still need help?",
-    "options": {
-      "done_no_help": "Yes",
-      "done": "No"
-    }
-  },
-  "wallet_core": {
-    "question": "What problem are you having?",
-    "options": {
-      "wallet_core_less_then_have": "Says I don't have enough funds but I do",
-      "wallet_core_miner": "Says transaction to big",
-      "wallet_core_old": "Wallet wont sync",
-      "wallet_core_update": "Where do I get update?",
-      "wallet_core_restore": "How do i restore a core wallet?"
-    }
-  },
-  "wallet_core_less_then_have": {
-    "answer": "This occasionally happens for people that have really old wallets.  Download Coinomi or another wallet on your phone then in the debug console run <span class='code'>walletpassphrase yourpassword 60</span> to unlock your wallet then <span class='code'>dumpwallet filename</span> to save your private keys to a file.  Open the file in a text editor and use either Coinomi's sweep function or <a href='https://DigiSweep.digiassetX.com'>https://DigiSweep.digiassetX.com</a> to sweep your funds to the new wallet.",
-    "question": "Do you still need help?",
-    "options": {
-      "done_no_help": "Yes",
-      "done": "No"
-    }
-  },
-  "wallet_core_miner": {
-    "answer": "You likely have to many UTXOs in your wallet.  You can fix this by sending a smaller amount to yourself a few times or if you have been mining you may want to go to the console and type <span class='code'>dumpprivkey miningaddress</span>.  Then use <a href='https://DigiSweep.digiassetX.com'>DigiSweep.digiassetX.com</a> to send the funds from the provided private key back to your wallet.",
-    "question": "Do you still need help?",
-    "options": {
-      "done_no_help": "Yes",
-      "done": "No"
-    }
-  },
-  "wallet_core_restore": {
-    "question": "What operating system are you running?",
-    "options": {
-      "core_restore_windows": "Windows",
-      "core_restore_mac": "macOS",
-      "core_restore_linux": "Linux"
-    }
-  },
-  "core_restore_windows": {
-    "answer": "Open a file explorer and in the address bar type <span class='code'>%appData%\\DigiByte</span> then copy your wallet.dat file to this folder.(If you named it something else rename it to wallet.dat)",
-    "question": "Do you need help installing the newest wallet?",
-    "options": {
-      "wallet_core_update": "Yes",
-      "done": "No"
-    }
-  },
-  "core_restore_mac": {
-    "answer": "Goto <span class='code'>~/Library/Application Support/DigiByte/</span> then copy your wallet.dat file to this folder.(If you named it something else rename it to wallet.dat)",
-    "question": "Do you need help installing the newest wallet?",
-    "options": {
-      "wallet_core_update": "Yes",
-      "done": "No"
-    }
-  },
-  "core_restore_linux": {
-    "answer": "goto <span class='code'>~/.digibyte/</span> then copy your wallet.dat file to this folder.(If you named it something else rename it to wallet.dat)",
-    "question": "Do you need help installing the newest wallet?",
-    "options": {
-      "wallet_core_update": "Yes",
-      "done": "No"
-    }
-  },
-  "wallet_core_old": {
-    "answer": "Shut down your core wallet.  Once shut down continue bellow",
-    "question": "What operating system are you using?",
-    "options": {
-      "delete_blocks_windows": "Windows",
-      "delete_blocks_mac": "macOS",
-      "delete_blocks_linux": "Linux"
-    }
-  },
-  "wallet_core_update": {
-    "answer": "Download the newest wallet at <a href='https://github.com/digibyte/digibyte/releases'>https://github.com/digibyte/digibyte/releases</a>",
-    "question": "Do you still need help?",
-    "options": {
-      "done_no_help": "Yes",
-      "done": "No"
-    }
-  },
-  "delete_blocks_windows": {
-    "answer": "Open a file explorer and in the address bar type <span class='code'>%appData%\\DigiByte</span> then delete the blocks and indexes folders if they exist.  Install the newest wallet and start it up if you haven't already.",
-    "question": "Do you need help installing the newest wallet?",
-    "options": {
-      "wallet_core_update": "Yes",
-      "done": "No"
-    }
-  },
-  "delete_blocks_mac": {
-    "answer": "Goto <span class='code'>~/Library/Application Support/DigiByte/</span> then delete the blocks and indexes folders if they exist.  Install the newest wallet and start it up if you haven't already.",
-    "question": "Do you need help installing the newest wallet?",
-    "options": {
-      "wallet_core_update": "Yes",
-      "done": "No"
-    }
-  },
-  "delete_blocks_linux": {
-    "answer": "goto <span class='code'>~/.digibyte/</span> then delete the blocks and indexes folders if they exist.  Install the newest wallet and start it up if you haven't already.",
-    "question": "Do you need help installing the newest wallet?",
-    "options": {
-      "wallet_core_update": "Yes",
-      "done": "No"
-    }
-  },
-  "wallet_other": {
-    "question": "Does it say invalid address?",
-    "options": {
-      "format_send": "Yes",
-      "done_no_help": "No"
-    }
-  },
+
+
+
   "done": {
     "answer": "Glad we could help you."
   },
