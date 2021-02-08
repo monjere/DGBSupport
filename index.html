@@ -8,19 +8,28 @@
 </head>
 <body>
 	<div id="window">
-		<div id="answer">Loading</div>
-		<div id="question"></div>
-		<div id="options"></div>
+        <div id="main">
+            <div id="answer">Loading</div>
+            <div id="question"></div>
+            <div id="options"></div>
+        </div>
 	</div>
+    <div id="warn" class="shadow">
+        <div id="warnText"></div>
+        <input id="warnConfirm" type="text">
+    </div>
+    <div id="shadow" class="shadow"></div>
     <script
             src="https://code.jquery.com/jquery-2.1.4.min.js"
             integrity="sha256-8WqyJLuWKRBVhxXIL1jBDD7SDxU936oZkCnxQbWwJVw="
             crossorigin="anonymous"></script>
     <script>
         let answers={};
+        let warnAnswer;
 
 
         let getPage=(key)=>{
+            //load page
             let page=answers[key]||answers["done_no_help"];//find page.  If missing fall back to couldn't help
             $("#answer").html(page.answer||"");
             $("#question").html(page.question||"");
@@ -29,8 +38,13 @@
                 html+='<button class="option" key="'+key+'">'+page.options[key]+'</button>';
             }
             $("#options").html(html);
+            if (page.warn!==undefined) {
+                $("#warnText").html(page.warn.challenge);
+                warnAnswer=page.warn.answer;
+                $(".shadow").show();
+            }
 
-            //if not start or end add the page to url
+            //add the page to url
             let url=window.location.href;
             let last=url;
             let end=url.indexOf('#');
@@ -46,8 +60,14 @@
             getPage(key);
         });
 
+        $(document).on('keyup',"#warnConfirm",function(){
+            if ($("#warnConfirm").val().toLowerCase()===warnAnswer.toLowerCase()) {
+                $(".shadow").hide();
+            }
+        });
+
         //load data and start
-        $.getJSON('answers.json').then((data)=>{
+        $.getJSON('answers-en.json').then((data)=>{
             //save answers
             answers=data;
 

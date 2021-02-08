@@ -309,6 +309,10 @@
     "answer": "Glad we could help you."
   },
   "done_no_help": {
-    "answer": "Sorry this could not help you.  <br>Warning before continuing be warned that scammers are everywhere.  Nevere accept support in a private message even if they look like an admin.  Many eyes keep everyone honest.  Please go to <a href='https://t.me/DGBSupport'>DGBSupport</a> on telegram and ask your question."
+    "warn": {
+      "challenge":"<h1>Warning!</h1>There are scammers everywhere.<br>Never accept support in a private message even if they look like an admin.<br>Remember many eyes keep everyone honest.<hr>To continue type 'I wont give away my keys' in the box below",
+      "answer": "I wont give away my keys"
+    },
+    "answer": "Sorry this could not help you.  <br>  Please go to <a href='https://t.me/DGBSupport'>DGBSupport</a> on telegram and ask your question."
   }
 }
