@@ -62,10 +62,27 @@
     }
   },
   "dead_go": {
-    "answer": "DigiByte Go is dead.  Recommend you download Coinomi or another wallet and use <a href='https://DigiSweep.digiassetX.com'>DigiSweep.digiassetX.com</a> to recover your funds",
+    "answer": "DigiByte Go is dead.  We have 2 possible recovery options.",
+    "question": "Which recovery option would you like to try?",
+    "options": {
+      "recover_digisweep": "Willing to pay 1% for simple recovery",
+      "recover_go_coinomi": "Free but has some hoops to jump through"
+    }
+  },
+  "recover_digisweep": {
+    "answer": "To recover your funds<br><ol><li>Download and install coinomi on your device</li><li>Go to <a href='https://DigiSweep.digiassetX.com'>DigiSweep.digiassetX.com</a></li><li>Read the first page then hit Start</li><li>Enter your 12 to 24 word mnemonic in to the mnemonic field</li><li>Get a new receive address from coinomi and put that in the Coin Address field</li><li>If you have any DigiAssets place an address in the Asset Address filed for them to be sent to</li><li>Press scan Mnemonic and wait for it to finish</li><li>For most people you will want to select the Send button.  If you are technically inclined and have a core wallet you can chose the Build button</li></ol>",
     "question": "Do you still need help?",
     "options": {
+      "recover_go_coinomi": "Want to try the free method to recover DigiByte Go",
       "done_no_help": "Yes",
+      "done": "No"
+    }
+  },
+  "recover_go_coinomi": {
+    "answer": "<p>If you have any DigiAssets select that you want to try the easy method bellow</p><p>Install the Coinomi app for Android / iOS / PC / macOS, links available: <a href='https://www.coinomi.com/en/downloads/'>https://www.coinomi.com/en/downloads/</a></p><p>When prompted, enter your 12-word DigiByte Go recovery phrase. You will see a slider for Advanced Settings which gives you BIP39 options, leave this off for now.</p><p>Proceed to the next screen where it will get you to password-protect this on your phone, you may proceed with a password or drag the slider to the left to proceed without password-protection.</p><p>At the list of new coins to add, you can tap once on DigiByte then press the \"+\" to add a standard DigiByte coin to the wallet.  You will now be taken back to the main Coinomi screen for DigiByte.  Don't worry that no funds will be found.</p><p>Click the \"+\" symbol and select Add Coins.</p><p>At the list of new coins to add, you can tap once on DigiByte and a small cog will appear to the right-hand side of that row, tap on the cog.</p><p>At the list of new coins to add, you can tap once on DigiByte and a small cog will appear to the right-hand side of that row, tap on the cog.</p><p>Give it a new name, such as \"DigiByte Go\", and then enter a custom derivation path:</p><p>M/44H/0H/0H</p><p>Tap OK, and then tap the \"+\" down the bottom-right. You will now be taken back to the main Coinomi screen for DigiByte.  This time it will find your funds.</p><p>So you don't have to do this again click on DigiByte then Receive to get your first DigiByte address on the proper path.  Click the Copy symbol in the top right of the screen.  Now go back to the main window click DigiByte Go then Send.  Paste your address in to the To field.  Select Max then Continue.</p>",
+    "question": "Do you still need help?",
+    "options": {
+      "recover_digisweep": "Want to try the easy method",
       "done": "No"
     }
   },
@@ -246,6 +263,7 @@
     "options": {
       "wallet_miner": "I mined to the wallet or received lots of small transactions",
       "format_send": "Says address I am sending to is invalid",
+      "wallet_core_update": "Core wallet sends but recipient doesn't get it",
       "wallet_asset_cant_send": "Trying to send a DigiAsset"
     }
   },
