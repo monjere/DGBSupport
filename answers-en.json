@@ -178,7 +178,7 @@
     }
   },
   "wallet_core_update": {
-    "answer": "Download the newest wallet at <a href='https://github.com/digibyte/digibyte/releases'>https://github.com/digibyte/digibyte/releases</a>",
+    "answer": "<ol><li>Shutdown your core wallet</li><li>Download and install the newest wallet at <a href='https://github.com/digibyte/digibyte/releases'>https://github.com/digibyte/digibyte/releases</a></li></ol>",
     "question": "Have you run the wallet since the last fork?(July 2019)",
     "options": {
       "wallet_core_stuck": "Yes",
