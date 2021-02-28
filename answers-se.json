@@ -1,0 +1,336 @@
+{
+    "start":  {
+      "question": "Vilket problem upplever ni?",
+      "options": {
+        "wallet": "Problem med min plånbok",
+        "exchange": "Problem med ett växlingskontor",
+        "done_no_help": "Annat"
+      }
+    },
+    "exchange": {
+      "question": "Vilket växlingskontor?",
+      "options": {
+        "exchange_poloniex_delist": "Poloniex",
+        "exchange_other": "Annan"
+      }
+    },
+    "exchange_poloniex_delist": {
+      "answer": "Poleniex har avlistat DigiByte.  Det går ej att återfå dina mynt nu.  Din enda, dock lilla, chansen är att kontakta en advokat.",
+      "question": "Behöver ni fortfarande hjälp?",
+      "options": {
+        "done_no_help": "Ja",
+        "done": "Nej"
+      }
+    },
+    "exchange_other": {
+      "question": "Vilket problem upplever ni?",
+      "options": {
+        "format_receive": "Ogiltlig adress när jag försöker ta ut DGB",
+        "format_send": "Ogiltlig adress när jag försöker sätta in DGB",
+        "exchange_cant_help": "Annat"
+      }
+    },
+    "exchange_cant_help": {
+      "answer": "För assistans behöver ni kontakta växlingskontoret.",
+      "question": "Behöver ni fortfarande hjälp?",
+      "options": {
+        "done_no_help": "Ja",
+        "done": "Nej"
+      }
+    },
+    "format_receive": {
+      "answer": "Personen/företaget som försöker skicka er tillgångar användar utdaterad kod.  Försök förse de med en legacy-adress(en som börjar med D).  Ifall er plånbok ej har det alternativet, ladda ner och använd Coinomi.",
+      "question": "Behöver ni fortfarande hjälp?",
+      "options": {
+        "done_no_help": "Ja",
+        "done": "Nej"
+      }
+    },
+    "format_send": {
+      "answer": "Plånboken ni använder är utdaterad. Det rekommenderas att använda Coinomi istället, det stödjer samtliga moderna adressformat.",
+      "question": "Behöver ni fortfarande hjälp?",
+      "options": {
+        "done_no_help": "Ja",
+        "done": "Nej"
+      }
+    },
+    "wallet": {
+      "question": "Är plånboken DigiByte Go?",
+      "options": {
+        "dead_go": "Ja",
+        "wallet_not_go": "Nej"
+      }
+    },
+    "dead_go": {
+      "answer": "Utvecklingen utav DigiByte Go har avstannat.  Vi har 2 möjliga alternativ för återvinning av tillgångar.",
+      "question": "Vilket alternativ vill du försöka med?",
+      "options": {
+        "recover_digisweep": "Simpel sweep, 1% i avgift",
+        "recover_go_coinomi": "Gratis sweep, dock avancerat med flertal steg."
+      }
+    },
+    "recover_digisweep": {
+      "answer": "För att återfå tillgångar<br><ol><li>Ladda ner och installera Coinomi på er enhet</li><li>Gå till <a href='https://DigiSweep.digiassetX.com' target='_blank'>DigiSweep.digiassetX.com</a></li><li>Läs den första sidan och tryck sedan Start</li><li>Fyll i er 12 till 24 ords mnemonic i mnemonic-fältet</li><li>Skaffa en ny mottagningsadress ifrån Coinomi och fyll i den i fältet där det står Coin Address</li><li>Ifall ni har några DigiAssets, placera en adress i fältet för Asset Address dit de kommer skickas</li><li>Tryck på scan Mnemonic och vänta tills processen slutförts</li><li>För de flesta, är det föredraget att trycka på Send-knappen. Ifall du är tekniskt inriktad och har en core plånbok så kan du välja Build-knappen</li></ol>",
+      "question": "Behöver ni fortfarande hjälp?",
+      "options": {
+        "recover_go_coinomi": "Jag vill prova ett gratis alternativ att återställa DigiByte Go",
+        "done_no_help": "Ja",
+        "done": "Nej"
+      }
+    },
+    "recover_go_coinomi": {
+      "answer": "<p>Ifall ni har några DigiAssets, välj den simpla metoden här nedan</p><p>Installera Coinomi appen för Android / iOS / PC / macOS, länkar tillgängliga: <a href='https://www.coinomi.com/en/downloads/'>https://www.coinomi.com/en/downloads/</a></p><p>När det efterfrågas, fyll i eran 12-ords DigiByte Go återställningsfras. Ni kommer se ett skjutreglage för avancerade inställningar med BIP39 alternativ, lämna det i av-läget.</p><p>Fortsätt till nästa skärm varpå ni kommer efterfrågas lösenordsskydda detta på er enhet, ni kan fortsätta med ett lösenord eller dra skjutreglaget åt vänster för att fortsätta utan lösenordsskydd.</p><p>Vid listan över vilka mynt som ska läggas till, tryck en gång på DigiByte och sedan på \"+\" för att lägga till ett standard DigiByte mynt till plånboken. Du kommer nu tas tillbaka till Coinomis huvudskärm för DigiByte.  Oroa er ej över att inga tillgångar hittas.</p><p>Tryck på \"+\" och välj Lägg till Mynt.</p><p>Vid listan över vilka mynt att lägga till, tryck en gång på DigiByte så kommer ett litet kuggghjul att visas vid högersidan utav den raden, trygg på kugghjulet.</p><p>Ge den ett nytt namn, så som \"DigiByte Go\", och lägg sedan till en 'custom derivation path':</p><p>M/44H/0H/0H</p><p>Tryck OK, tryck sedan \"+\" nere till höger. Ni kommer nu tas tillbaka tll Coinomis huvudskärm för DigiByte.  Denna gång kommer den finna era tillgångar.</p><p>Så ni ej ska behöva upprepa detta, tryck på DigiByte sedan på Receive/Ta emot för att få er första DigiByte adress med en proper sökväg.  tryck på Kopiera/Copy-symbolen i den övre högra delen av skärmen.  Gå nu tillbaka till huvudskärmen, klicka på DigiByte Go och sänd sedan.  Klistra in er adress i To/Till-fältet.  Välj Max och sedan Fortsätt/Continue.</p>",
+      "question": "Behöver ni fortfarande hjälp?",
+      "options": {
+        "recover_digisweep": "Jag vill prova den simpla metoden",
+        "done": "Nej"
+      }
+    },
+    "wallet_not_go": {
+      "question": "Vilket problem upplever ni?",
+      "options": {
+        "wallet_cant_recover": "Kan ej återställa min plånbok",
+        "wallet_cant_send": "Kan ej skicka",
+        "wallet_not_synced": "Alla tillgångar syns ej",
+        "wallet_wont_load": "Plånboken laddar långsamt",
+        "wallet_wont_sync": "Plånboken synkroniserar ej",
+        "wallet_core_update": "Uppgradering av Core plånbok",
+        "done_no_help": "Annat"
+      }
+    },
+    "wallet_cant_recover": {
+      "question": "Vilken plånbok har ni?",
+      "options": {
+        "wallet_bip39": "Mobil/Hårdvaruplånbok(12 till 24 ords återställning)",
+        "wallet_core_restore": "Core(wallet.dat fil)"
+      }
+    },
+    "wallet_bip39": {
+      "question": "Vilket problem upplever ni?",
+      "options": {
+        "wallet_bip39_invalid_word": "Säger att orden är ogiltiga",
+        "wallet_bip39_standards": "Har återställt en annan plånbok men balansen visar 0",
+        "done_no_help": "Annat"
+      }
+    },
+    "wallet_bip39_invalid_word": {
+      "answer": "Detta är oftast ett resultat felaktig inmatning av ord.  Vänligen säkerställ att samtliga ord är korrekt stavade, så som kan finnas på denna <a href='https://github.com/bitcoin/bips/tree/master/bip-0039' target='_blank'>ordlistan</a>.  Accenter är viktiga ifall de finns det.",
+      "question": "Behöver ni fortfarande hjälp?",
+      "options": {
+        "done_no_help": "Ja",
+        "done": "Nej"
+      }
+    },
+    "wallet_bip39_standards": {
+      "question": "Vilken plånbok använde ni tidigare?",
+      "options": {
+        "wallet_bip39_standards_digibyte_mobile": "DigiByte Mobile",
+        "dead_go": "DigiByte Go",
+        "wallet_bip39_standards_compliant": "Annat"
+      }
+    },
+    "wallet_bip39_standards_digibyte_mobile": {
+      "answer": "Tyvärr är ej DigiByte Mobile standardkompatibel.  Ni kan endast återställa tillfrångar från DigiByte Mobile med DigiByte mobile eller använda <a href='https://DigiSweep.digiassetX.com'>DigiSweep</a> för att flytta tillgångarna till en ny plånbok",
+      "question": "Behöver ni fortfarande hjälp?",
+      "options": {
+        "done_no_help": "Ja",
+        "done": "Nej"
+      }
+    },
+    "wallet_bip39_standards_compliant": {
+      "answer": "Er tidigare plånbok var troligen standardkompatibel.  Ifall er nya plånbok ej kan visa era tillgångar, prova använda Coinomi istället.",
+      "question": "Behöver ni fortfarande hjälp?",
+      "options": {
+        "done_no_help": "Ja",
+        "done": "Nej"
+      }
+    },
+    "wallet_core_restore": {
+      "question": "Vilket operativsystem använder ni?",
+      "options": {
+        "wallet_core_restore_windows": "Windows",
+        "wallet_core_restore_mac": "macOS",
+        "wallet_core_restore_linux": "Linux"
+      }
+    },
+    "wallet_core_restore_windows": {
+      "answer": "Öppna en filutforskare och skriv in följande i adressfältet <span class='code'>%appData%\\DigiByte</span> kopiera sedan filen wallet.dat till den här mappen.(Ifall ni har döpt det till någonting annat, döp om den till wallet.dat)",
+      "question": "Behöver ni hjälp med att installera den senaste plånboken?",
+      "options": {
+        "wallet_core_update": "Ja",
+        "done": "Nej"
+      }
+    },
+    "wallet_core_restore_mac": {
+      "answer": "Gå till <span class='code'>~/Library/Application Support/DigiByte/</span> kopiera sedan filen wallet.dat till den här mappen.(Ifall ni har döpt det till någonting annat, döp om den till wallet.dat)",
+      "question": "Behöver ni hjälp med att installera den senaste plånboken?",
+      "options": {
+        "wallet_core_update": "Ja",
+        "done": "Nej"
+      }
+    },
+    "wallet_core_restore_linux": {
+      "answer": "Gå till <span class='code'>~/.digibyte/</span> kopiera sedan filen wallet.dat till den här mappen.(Ifall ni har döpt det till någonting annat, döp om den till wallet.dat)",
+      "question": "Behöver ni hjälp med att installera den senaste plånboken?",
+      "options": {
+        "wallet_core_update": "Ja",
+        "done": "Nej"
+      }
+    },
+    "wallet_core_update": {
+      "answer": "<ol><li>Stäng av er Core plånbok</li><li>Ladda ner och installera den nya plånboken ifrån <a href='https://github.com/digibyte/digibyte/releases'>https://github.com/digibyte/digibyte/releases</a></li></ol>",
+      "question": "Har ni använt plånboken sedan den senaste avgreningen/fork? (Juli 2019)",
+      "options": {
+        "wallet_core_stuck": "Ja",
+        "done": "Nej"
+      }
+    },
+    "wallet_wont_load": {
+      "question": "Vilken plånbok använder ni?",
+      "options": {
+        "wallet_core_stuck": "Core",
+        "done_no_help": "Annat"
+      }
+    },
+    "wallet_core_stuck": {
+      "answer": "Stäng av er Core plånbok.  När den stängts av, fortsätt här nedan",
+      "question": "Vilket operativsystem använder ni?",
+      "options": {
+        "wallet_core_delete_blocks_windows": "Windows",
+        "wallet_core_delete_blocks_mac": "macOS",
+        "wallet_core_delete_blocks_linux": "Linux"
+      }
+    },
+    "wallet_core_delete_blocks_windows": {
+      "answer": "Öppna en filutforskare och skriv in följande i adressfältet <span class='code'>%appData%\\DigiByte</span> radera sedan mapparna blocks och indexes ifall de finns.  Installera och starta den senaste plånboken, ifall ni ej redan har gjort det.",
+      "question": "Behöver ni fortfarande hjälp?",
+      "options": {
+        "done_no_help": "Ja",
+        "done": "Nej"
+      }
+    },
+    "wallet_core_delete_blocks_mac": {
+      "answer": "Gå till <span class='code'>~/Library/Application Support/DigiByte/</span> radera sedan mapparna blocks och indexes ifall de finns.  Installera och starta den senaste plånboken, ifall ni ej redan har gjort det.",
+      "question": "Behöver ni fortfarande hjälp?",
+      "options": {
+        "done_no_help": "Ja",
+        "done": "Nej"
+      }
+    },
+    "wallet_core_delete_blocks_linux": {
+      "answer": "Gå till <span class='code'>~/.digibyte/</span> radera sedan mapparna blocks och indexes ifall de finns.  Installera och starta den senaste plånboken, ifall ni ej redan har gjort det.",
+      "question": "Behöver ni fortfarande hjälp?",
+      "options": {
+        "done_no_help": "Ja",
+        "done": "Nej"
+      }
+    },
+    "wallet_not_synced": {
+      "question": "Har ni försökt synkronisera plånboken?",
+      "options": {
+        "wallet_wont_sync": "Nej",
+        "wallet_core_less_then_have": "Ja: Jag använde en väldigt gammal Core plånbok",
+        "done_no_help": "Ja: Annat"
+      }
+    },
+    "wallet_wont_sync": {
+      "question": "Vilken plånbok använder ni?",
+      "options": {
+        "wallet_wont_sync_mobile": "DigiByte Mobile",
+        "wallet_core_update": "Core Äldre än 7.17.2",
+        "wallet_core_stuck": "Core Version 7.17.2",
+        "done_no_help": "Annat"
+      }
+    },
+    "wallet_wont_sync_mobile": {
+      "answer": "Orsaken är troligen orsakat av DNS, ofta på grund av budgetutrustning. Ni vill göra det följande:\n\nStäng av WiFi på er enhet\nStäng av er enhet\nStarta enheten igen, endast ansluten via mobil data så som 3G / 4G data anslutning\nStarta DigiByte mobile appen och vänta tills synkroniseringen börjar\nNär synkroniseringen har startat kan ni återansluta till ert WiFi\nNi måster utföra dessa steg i rätt ordning, så att när ni startar er enhet så efterfrågar den er telefonoperatörs DNS. Ofta kommer hemmaroutrar av lägre grad fortsätta tillhandahålla stela DNS-poster till enheter så som mobiltelefoner över WiFi, vilket betyder att även ifall ni startar om eran mobiltelefon medans ni är anslutna över WiFi så kommer det troligen inte heller lyckas.\n\nDet borde börja synka inom några sekunder efter ni har öppnat upp appen igen.\n\nSkulle ni fortfarande uppleva bekymmer efter att ha följt felsökningsstegen ovanför, så kan ni även gå till Meny -> Inställningar -> Synkronisera blockkedja, så kommer den genomföra en full återsynkronisering. Detta kommer ej påverka era tillgångar, men tar vanligtvis runt 20-30 minuter.",
+      "question": "Behöver ni fortfarande hjälp?",
+      "options": {
+        "done_no_help": "Ja",
+        "done": "Nej"
+      }
+    },
+    "wallet_core_less_then_have": {
+      "answer": "Ladda ner Coinomi eller en annan plånbok på er enhet, sedan i debuggkonsolen av plånboken så kör ni <span class='code'>walletpassphrase yourpassword 60</span> för att låsa upp er plånbok, sedan <span class='code'>dumpwallet filename</span> för att spara era privata nycklar till en fil.  Öppna filen i en textredigerare och använd antingen Coinomis sweepfunktion eller <a href='https://DigiSweep.digiassetX.com'>https://DigiSweep.digiassetX.com</a> för att 'sweepa' era tillgånger till en ny plånbok.",
+      "question": "Behöver ni fortfarande hjälp?",
+      "options": {
+        "done_no_help": "Ja",
+        "done": "Nej"
+      }
+    },
+    "wallet_cant_send": {
+      "question": "Det kan finnas ett antal olika anledningar för detta, vänligen välj det alternativ som stämmer in mest:",
+      "options": {
+        "wallet_miner": "Jag har brytit till min plånbok eller mottagit väldigt många små transaktioner",
+        "format_send": "Den säger att adressen jag försöker skicka till är ogiltig",
+        "wallet_core_update": "Core plånboken genomför transaktionen men syns ej för mottagaren.",
+        "wallet_asset_cant_send": "Försöker skicka en DigiAsset"
+      }
+    },
+    "wallet_miner": {
+      "question": "Vilken plånbok använder ni?",
+      "options": {
+        "wallet_miner_core": "Core",
+        "wallet_miner_other": "Annat"
+      }
+    },
+    "wallet_miner_core": {
+      "answer": "Ni har troligen för många UTXOs i er plånbok.  Ni can fixa detta genom att skicka mindre mängder till er själv flertal gånger, ifall ni har brytit till er plånbok så bör ni öppna debuggkonsolen och skriva <span class='code'>dumpprivkey brytningsadress</span>.  Sedan använda <a href='https://DigiSweep.digiassetX.com'>DigiSweep.digiassetX.com</a> för att skicka tillgångarna från den tillhandahållna privata nyckeln tillbaka till er plånbok.",
+      "question": "Behöver ni fortfarande hjälp?",
+      "options": {
+        "done_no_help": "Ja",
+        "done": "Nej"
+      }
+    },
+    "wallet_miner_other": {
+      "answer": "Plånboken är troligen inte funktionell längre på grund av för många UTXOs.  <a href='https://DigiSweep.digiassetX.com'>DigiSweep.digiassetX.com</a> kan användas för att flytta alla tillgångar till en ny adress för att lösa problemet.",
+      "question": "Löste detta ert problem?",
+      "options": {
+        "done": "Ja",
+        "wallet_cant_send": "Nej"
+      }
+    },
+    "wallet_asset_cant_send": {
+      "question": "Har ni några DigiByte i plånboken?",
+      "options": {
+        "wallet_asset_cant_send2": "Ja",
+        "wallet_asset_no_funds": "Nej"
+      }
+    },
+    "wallet_asset_no_funds": {
+      "answer": "Ni måste ha åtminstone 0.001DGB i er plånbok för att kunna skicka DigiAssets",
+      "question": "Upplever ni fortfarande bekymmer",
+      "options": {
+        "done_no_help": "Ja",
+        "done": "Nej"
+      }
+    },
+    "wallet_asset_cant_send2": {
+      "question": "Börjar adressen ni försöker skicka till med dgb1?",
+      "options": {
+        "wallet_asset_ask_legacy": "Ja",
+        "done_no_help": "Nej"
+      }
+    },
+    "wallet_asset_ask_legacy": {
+      "answer": "Fråga personen ni försöker skicka till att tillhandahålla en legacy-adress.  Det bör synas under qr-koden på deras telefon.",
+      "question": "Behöver ni fortfarande hjälp?",
+      "options": {
+        "done_no_help": "Ja",
+        "done": "Nej"
+      }
+    },
+  
+  
+  
+    "done": {
+      "answer": "Skönt att vi kunde hjälpa till."
+    },
+    "done_no_help": {
+      "warn": {
+        "challenge":"<h1>Varning!</h1>Det finns bedragare överallt.<br>Ta aldrig emot support över private meddelande, även ifall det ser ut som en administratör.<br>Kom ihåg att flera ögon håller alla ärliga.<hr>För att fortsätta, skriv in 'Jag kommer ej ge ut mina nycklar' i fältet nedanför",
+        "answer": "Jag kommer ej ge ut mina nycklar"
+      },
+      "answer": "Synd att detta ej kunde hjälpa er.  <br>  Vänligen besök <a href='https://t.me/DGBSupport'>DGBSupport</a> på Telegram och beskriv ert bekymmer."
+    }
+  }
