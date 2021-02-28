@@ -7,6 +7,13 @@
 	<link href="style.css" rel="stylesheet">
 </head>
 <body>
+    <div id="language_div">
+        <label for="language">Language:</label>
+        <select id="language">
+            <option value="en">English</option>
+            <option value="sv">Swedish</option>
+        </select>
+    </div>
     <div id="overlay"></div>
 	<div id="window">
         <div id="main">
@@ -20,20 +27,21 @@
         <input id="warnConfirm" type="text">
     </div>
     <div id="shadow" class="shadow"></div>
-    <img id="dgb-d" src="/img/dgb.svg" alt="" width="45px">
-    <h2 id="troubleshooting">Troubleshooting</h3>
+    <img id="dgb-d" src="img/dgb.svg" alt="" width="45px">
+    <h2 id="troubleshooting">Troubleshooting</h2>
     <script
             src="https://code.jquery.com/jquery-2.1.4.min.js"
             integrity="sha256-8WqyJLuWKRBVhxXIL1jBDD7SDxU936oZkCnxQbWwJVw="
             crossorigin="anonymous"></script>
     <script>
         let answers={};
+        let language='en';
         let warnAnswer;
 
 
         let getPage=(key)=>{
             //load page
-            let page=answers[key]||answers["done_no_help"];//find page.  If missing fall back to couldn't help
+            let page=answers[language][key]||answers.en[key]||answers[language]["done_no_help"];//find page.  If missing fall back to english then couldn't help
             $("#answer").html(page.answer||"");
             $("#question").html(page.question||"");
             let html="";
@@ -72,21 +80,40 @@
             }
         });
 
-        //load data and start
-        $.getJSON('answers-en.json').then((data)=>{
-            //save answers
-            answers=data;
-
+        //function to find current key
+        let getKey=()=>{
             //find what page to load
             let url=window.location.href;
             let end=url.indexOf('#');
             let key="start";
             if (end>0) key = url.substr(end + 1);
-            if (answers[key]===undefined) key=start;      //if page doesn't exist go to start
+            if (answers.en[key]===undefined) key=start;      //if page doesn't exist go to start
+            return key;
+        }
+
+        //load data and start
+        $.getJSON('answers-en.json').then((data)=>{
+            //save answers
+            answers.en=data;
 
             //load page
-            getPage(key);
+            getPage(getKey());
         });
+
+        //handle language change
+        $("#language").on('change',()=>{
+            language=$("#language").val();
+            if (answer[language]===undefined) {
+                $.getJSON('answers-'+language+'.json').then((data)=>{
+                    //save answers
+                    answers[language]=data;
+
+                    //load page
+                    getPage(getKey());
+                });
+            }
+        });
+
         //show window
         $(document).ready(()=>$("#window").fadeIn(300));
     </script>

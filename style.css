@@ -75,6 +75,13 @@ body {
     margin-top: 50px;
 }
 
+#language_div {
+    position: fixed;
+    right:    5px;
+    bottom: 5px;
+    z-index: 999998;
+}
+
 #question{
     font-family:        'Courier New', Courier, monospace;
     padding:            0 0 1rem 0;
@@ -187,7 +194,7 @@ h2#troubleshooting{
 
 @font-face {
     font-family:    Roboto-thin;
-    src:            url("/fonts/Roboto-ThinItalic.ttf");
+    src:            url("fonts/Roboto-ThinItalic.ttf");
 }
 
 @media only screen and (max-width: 600px) {

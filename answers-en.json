@@ -226,7 +226,7 @@
     }
   },
   "wallet_not_synced": {
-    "question": "Have you tried syncing the waller?",
+    "question": "Have you tried syncing the wallet?",
     "options": {
       "wallet_wont_sync": "No",
       "wallet_core_less_then_have": "Yes: I was using a really old core wallet",
