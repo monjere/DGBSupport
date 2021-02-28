@@ -103,7 +103,7 @@
         //handle language change
         $("#language").on('change',()=>{
             language=$("#language").val();
-            if (answer[language]===undefined) {
+            if (answers[language]===undefined) {
                 $.getJSON('answers-'+language+'.json').then((data)=>{
                     //save answers
                     answers[language]=data;
