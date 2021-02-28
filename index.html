@@ -38,7 +38,7 @@
         let language='en';
         let warnAnswer;
 
-
+        let lastUrl=window.location.href;
         let getPage=(key)=>{
             //load page
             let page=answers[language][key]||answers.en[key]||answers[language]["done_no_help"];//find page.  If missing fall back to english then couldn't help
@@ -53,6 +53,8 @@
                 $("#warnText").html(page.warn.challenge);
                 warnAnswer=page.warn.answer;
                 $(".shadow").show();
+            } else {
+                $(".shadow").hide();
             }
 
             //add the page to url
@@ -62,7 +64,8 @@
             if (end>0) url = url.substr(0,end); //remove everything after and including # if present
             url+="#"+key;
             console.log(url);
-            if (url!==last) window.location.replace(url);
+            if (url!==last) window.location.href=url;
+            lastUrl=url;
         }
 
         //handle option click
@@ -116,6 +119,12 @@
                 getPage(getKey());
             }
         });
+
+        //handle back and forward buttons
+        setInterval(()=>{
+            if (lastUrl!==window.location.href) getPage(getKey());
+        },200);
+
 
         //show window
         $(document).ready(()=>$("#window").fadeIn(300));
