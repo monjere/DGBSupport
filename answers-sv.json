@@ -162,7 +162,7 @@
       }
     },
     "wallet_core_restore_mac": {
-      "answer": "Gå till <span class='code'>~/Library/Application Support/DigiByte/</span> kopiera sedan filen wallet.dat till den här mappen.(Ifall ni har döpt det till någonting annat, döp om den till wallet.dat)",
+      "answer": "Gå till <span class='code'>~/Library/Application Support/DigiByte/</span> kopiera sedan filen wallet.dat till den här mappen.(Ifall ni har döpt det till någonting annat, döp om den till wallet.dat)<br>Ifall filerna är dolda, gör dem synliga med tagentbordsgenvägen <span class='code'>⇧ Shift</span> + <span class='code'>⌘ Command</span> + <span class='code'>.</span>.",
       "question": "Behöver ni hjälp med att installera den senaste plånboken?",
       "options": {
         "wallet_core_update": "Ja",
@@ -210,7 +210,7 @@
       }
     },
     "wallet_core_delete_blocks_mac": {
-      "answer": "Gå till <span class='code'>~/Library/Application Support/DigiByte/</span> radera sedan mapparna blocks och indexes ifall de finns.  Installera och starta den senaste plånboken, ifall ni ej redan har gjort det.",
+      "answer": "Gå till <span class='code'>~/Library/Application Support/DigiByte/</span> radera sedan mapparna blocks och indexes ifall de finns.<br>Ifall filerna är dolda, gör dem synliga med tagentbordsgenvägen <span class='code'>⇧ Shift</span> + <span class='code'>⌘ Command</span> + <span class='code'>.</span>.<br>  Installera och starta den senaste plånboken, ifall ni ej redan har gjort det.",
       "question": "Behöver ni fortfarande hjälp?",
       "options": {
         "done_no_help": "Ja",

@@ -14,7 +14,6 @@
             <option value="sv">Swedish</option>
         </select>
     </div>
-    <div id="overlay"></div>
 	<div id="window">
         <div id="main">
             <div id="answer">Loading</div>
@@ -27,7 +26,7 @@
         <input id="warnConfirm" type="text">
     </div>
     <div id="shadow" class="shadow"></div>
-    <img id="dgb-d" src="img/dgb.svg" alt="" width="45px">
+    <img id="dgb-d" src="img/dgb.svg" alt="DigiByte symbol" width="45px" title="Back to start">
     <h2 id="troubleshooting">Troubleshooting</h2>
     <script
             src="https://code.jquery.com/jquery-2.1.4.min.js"
@@ -46,7 +45,7 @@
             $("#question").html(page.question||"");
             let html="";
             for (let key in page.options) {
-                html+='<button class="option" key="'+key+'">'+page.options[key]+'</button>';
+                html+='<button class="option" key="'+key+'"><span>'+page.options[key]+'</span></button>';
             }
             $("#options").html(html);
             if (page.warn!==undefined) {
@@ -127,7 +126,12 @@
 
 
         //show window
-        $(document).ready(()=>$("#window").fadeIn(300));
+        $(document).ready(()=>$("#question, #options").fadeIn(300));
+
+        //back to start
+        $(document).on("click", "#dgb-d", () => {
+            document.location.href = "./";
+        })
     </script>
 </body>
 </html>

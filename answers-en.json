@@ -162,7 +162,7 @@
     }
   },
   "wallet_core_restore_mac": {
-    "answer": "Goto <span class='code'>~/Library/Application Support/DigiByte/</span> then copy your wallet.dat file to this folder.(If you named it something else rename it to wallet.dat)",
+    "answer": "Goto <span class='code'>~/Library/Application Support/DigiByte/</span> then copy your wallet.dat file to this folder.(If you named it something else rename it to wallet.dat)<br>If files are hidden, reveal them with the keyboard shortcut <span class='code'>⇧ Shift</span> + <span class='code'>⌘ Command</span> + <span class='code'>.</span>.",
     "question": "Do you need help installing the newest wallet?",
     "options": {
       "wallet_core_update": "Yes",
@@ -193,7 +193,7 @@
     }
   },
   "wallet_core_stuck": {
-    "answer": "Shut down your core wallet.  Once shut down continue bellow",
+    "answer": "Shut down your core wallet.  Once shut down continue below",
     "question": "What operating system are you using?",
     "options": {
       "wallet_core_delete_blocks_windows": "Windows",
@@ -210,7 +210,7 @@
     }
   },
   "wallet_core_delete_blocks_mac": {
-    "answer": "Goto <span class='code'>~/Library/Application Support/DigiByte/</span> then delete the blocks and indexes folders if they exist.  Install the newest wallet and start it up if you haven't already.",
+    "answer": "Goto <span class='code'>~/Library/Application Support/DigiByte/</span> then delete the blocks and indexes folders if they exist.<br>If files are hidden, reveal them with the keyboard shortcut <span class='code'>⇧ Shift</span> + <span class='code'>⌘ Command</span> + <span class='code'>.</span>.<br>  Install the newest wallet and start it up if you haven't already.",
     "question": "Do you still need help?",
     "options": {
       "done_no_help": "Yes",
