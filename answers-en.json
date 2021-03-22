@@ -89,6 +89,7 @@
   "wallet_not_go": {
     "question": "What problem are you having?",
     "options": {
+      "wallet_wrong_exchange": "Wrong fiat value shown",
       "wallet_cant_recover": "Can't recover my wallet",
       "wallet_cant_send": "Can't send",
       "wallet_not_synced": "Not all funds showing",
@@ -96,6 +97,14 @@
       "wallet_wont_sync": "Wallet wont sync",
       "wallet_core_update": "Upgrading Core Wallet",
       "done_no_help": "Other"
+    }
+  },
+  "wallet_wrong_exchange": {
+    "answer": "The price shown is for convenience only and is not important.  Currently API that shows price on DigiByte mobile is down.  If you are not using DigiAssets you can upgrade to Coinomi which is a far better and safer wallet.",
+    "question": "Do you still need help?",
+    "options": {
+      "done_no_help": "Yes",
+      "done": "No"
     }
   },
   "wallet_cant_recover": {
