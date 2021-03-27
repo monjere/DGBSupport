@@ -79,7 +79,7 @@
       }
     },
     "recover_go_coinomi": {
-      "answer": "<p>Ifall ni har några DigiAssets, välj den simpla metoden här nedan</p><p>Installera Coinomi appen för Android / iOS / PC / macOS, länkar tillgängliga: <a href='https://www.coinomi.com/en/downloads/'>https://www.coinomi.com/en/downloads/</a></p><p>När det efterfrågas, fyll i eran 12-ords DigiByte Go återställningsfras. Ni kommer se ett skjutreglage för avancerade inställningar med BIP39 alternativ, lämna det i av-läget.</p><p>Fortsätt till nästa skärm varpå ni kommer efterfrågas lösenordsskydda detta på er enhet, ni kan fortsätta med ett lösenord eller dra skjutreglaget åt vänster för att fortsätta utan lösenordsskydd.</p><p>Vid listan över vilka mynt som ska läggas till, tryck en gång på DigiByte och sedan på \"+\" för att lägga till ett standard DigiByte mynt till plånboken. Du kommer nu tas tillbaka till Coinomis huvudskärm för DigiByte.  Oroa er ej över att inga tillgångar hittas.</p><p>Tryck på \"+\" och välj Lägg till Mynt.</p><p>Vid listan över vilka mynt att lägga till, tryck en gång på DigiByte så kommer ett litet kuggghjul att visas vid högersidan utav den raden, trygg på kugghjulet.</p><p>Ge den ett nytt namn, så som \"DigiByte Go\", och lägg sedan till en 'custom derivation path':</p><p>M/44H/0H/0H</p><p>Tryck OK, tryck sedan \"+\" nere till höger. Ni kommer nu tas tillbaka tll Coinomis huvudskärm för DigiByte.  Denna gång kommer den finna era tillgångar.</p><p>Så ni ej ska behöva upprepa detta, tryck på DigiByte sedan på Receive/Ta emot för att få er första DigiByte adress med en proper sökväg.  tryck på Kopiera/Copy-symbolen i den övre högra delen av skärmen.  Gå nu tillbaka till huvudskärmen, klicka på DigiByte Go och sänd sedan.  Klistra in er adress i To/Till-fältet.  Välj Max och sedan Fortsätt/Continue.</p>",
+      "answer": "<p>Ifall ni har några DigiAssets, välj den simpla metoden här nedan</p><p>Installera Coinomi appen för Android / iOS / PC / macOS, länkar tillgängliga: <a href='https://www.coinomi.com/en/downloads/' target='_blank'>https://www.coinomi.com/en/downloads/</a></p><p>När det efterfrågas, fyll i eran 12-ords DigiByte Go återställningsfras. Ni kommer se ett skjutreglage för avancerade inställningar med BIP39 alternativ, lämna det i av-läget.</p><p>Fortsätt till nästa skärm varpå ni kommer efterfrågas lösenordsskydda detta på er enhet, ni kan fortsätta med ett lösenord eller dra skjutreglaget åt vänster för att fortsätta utan lösenordsskydd.</p><p>Vid listan över vilka mynt som ska läggas till, tryck en gång på DigiByte och sedan på \"+\" för att lägga till ett standard DigiByte mynt till plånboken. Du kommer nu tas tillbaka till Coinomis huvudskärm för DigiByte.  Oroa er ej över att inga tillgångar hittas.</p><p>Tryck på \"+\" och välj Lägg till Mynt.</p><p>Vid listan över vilka mynt att lägga till, tryck en gång på DigiByte så kommer ett litet kuggghjul att visas vid högersidan utav den raden, trygg på kugghjulet.</p><p>Ge den ett nytt namn, så som \"DigiByte Go\", och lägg sedan till en 'custom derivation path':</p><p>M/44H/0H/0H</p><p>Tryck OK, tryck sedan \"+\" nere till höger. Ni kommer nu tas tillbaka tll Coinomis huvudskärm för DigiByte.  Denna gång kommer den finna era tillgångar.</p><p>Så ni ej ska behöva upprepa detta, tryck på DigiByte sedan på Receive/Ta emot för att få er första DigiByte adress med en proper sökväg.  tryck på Kopiera/Copy-symbolen i den övre högra delen av skärmen.  Gå nu tillbaka till huvudskärmen, klicka på DigiByte Go och sänd sedan.  Klistra in er adress i To/Till-fältet.  Välj Max och sedan Fortsätt/Continue.</p>",
       "question": "Behöver ni fortfarande hjälp?",
       "options": {
         "recover_digisweep": "Jag vill prova den simpla metoden",
@@ -130,7 +130,7 @@
       }
     },
     "wallet_bip39_standards_digibyte_mobile": {
-      "answer": "Tyvärr är ej DigiByte Mobile standardkompatibel.  Ni kan endast återställa tillfrångar från DigiByte Mobile med DigiByte mobile eller använda <a href='https://DigiSweep.digiassetX.com'>DigiSweep</a> för att flytta tillgångarna till en ny plånbok",
+      "answer": "Tyvärr är ej DigiByte Mobile standardkompatibel.  Ni kan endast återställa tillfrångar från DigiByte Mobile med DigiByte mobile eller använda <a href='https://DigiSweep.digiassetX.com' target='_blank'>DigiSweep</a> för att flytta tillgångarna till en ny plånbok",
       "question": "Behöver ni fortfarande hjälp?",
       "options": {
         "done_no_help": "Ja",
@@ -178,7 +178,7 @@
       }
     },
     "wallet_core_update": {
-      "answer": "<ol><li>Stäng av er Core plånbok</li><li>Ladda ner och installera den nya plånboken ifrån <a href='https://github.com/digibyte/digibyte/releases'>https://github.com/digibyte/digibyte/releases</a></li></ol>",
+      "answer": "<ol><li>Stäng av er Core plånbok</li><li>Ladda ner och installera den nya plånboken ifrån <a href='https://github.com/digibyte-core/digibyte/releases' target='_blank'>https://github.com/digibyte-core/digibyte/releases</a></li></ol>",
       "question": "Har ni använt plånboken sedan den senaste avgreningen/fork? (Juli 2019)",
       "options": {
         "wallet_core_stuck": "Ja",
@@ -251,7 +251,7 @@
       }
     },
     "wallet_core_less_then_have": {
-      "answer": "Ladda ner Coinomi eller en annan plånbok på er enhet, sedan i debuggkonsolen av plånboken så kör ni <span class='code'>walletpassphrase yourpassword 60</span> för att låsa upp er plånbok, sedan <span class='code'>dumpwallet filename</span> för att spara era privata nycklar till en fil.  Öppna filen i en textredigerare och använd antingen Coinomis sweepfunktion eller <a href='https://DigiSweep.digiassetX.com'>https://DigiSweep.digiassetX.com</a> för att 'sweepa' era tillgånger till en ny plånbok.",
+      "answer": "Ladda ner Coinomi eller en annan plånbok på er enhet, sedan i debuggkonsolen av plånboken så kör ni <span class='code'>walletpassphrase yourpassword 60</span> för att låsa upp er plånbok, sedan <span class='code'>dumpwallet filename</span> för att spara era privata nycklar till en fil.  Öppna filen i en textredigerare och använd antingen Coinomis sweepfunktion eller <a href='https://DigiSweep.digiassetX.com' target='_blank'>https://DigiSweep.digiassetX.com</a> för att 'sweepa' era tillgånger till en ny plånbok.",
       "question": "Behöver ni fortfarande hjälp?",
       "options": {
         "done_no_help": "Ja",
@@ -275,7 +275,7 @@
       }
     },
     "wallet_miner_core": {
-      "answer": "Ni har troligen för många UTXOs i er plånbok.  Ni can fixa detta genom att skicka mindre mängder till er själv flertal gånger, ifall ni har brytit till er plånbok så bör ni öppna debuggkonsolen och skriva <span class='code'>dumpprivkey brytningsadress</span>.  Sedan använda <a href='https://DigiSweep.digiassetX.com'>DigiSweep.digiassetX.com</a> för att skicka tillgångarna från den tillhandahållna privata nyckeln tillbaka till er plånbok.",
+      "answer": "Ni har troligen för många UTXOs i er plånbok.  Ni can fixa detta genom att skicka mindre mängder till er själv flertal gånger, ifall ni har brytit till er plånbok så bör ni öppna debuggkonsolen och skriva <span class='code'>dumpprivkey brytningsadress</span>.  Sedan använda <a href='https://DigiSweep.digiassetX.com' target='_blank'>DigiSweep.digiassetX.com</a> för att skicka tillgångarna från den tillhandahållna privata nyckeln tillbaka till er plånbok.",
       "question": "Behöver ni fortfarande hjälp?",
       "options": {
         "done_no_help": "Ja",
@@ -283,7 +283,7 @@
       }
     },
     "wallet_miner_other": {
-      "answer": "Plånboken är troligen inte funktionell längre på grund av för många UTXOs.  <a href='https://DigiSweep.digiassetX.com'>DigiSweep.digiassetX.com</a> kan användas för att flytta alla tillgångar till en ny adress för att lösa problemet.",
+      "answer": "Plånboken är troligen inte funktionell längre på grund av för många UTXOs.  <a href='https://DigiSweep.digiassetX.com' target='_blank'>DigiSweep.digiassetX.com</a> kan användas för att flytta alla tillgångar till en ny adress för att lösa problemet.",
       "question": "Löste detta ert problem?",
       "options": {
         "done": "Ja",
@@ -331,6 +331,6 @@
         "challenge":"<h1>Varning!</h1>Det finns bedragare överallt.<br>Ta aldrig emot support över private meddelande, även ifall det ser ut som en administratör.<br>Kom ihåg att flera ögon håller alla ärliga.<hr>För att fortsätta, skriv in 'Jag kommer ej ge ut mina nycklar' i fältet nedanför",
         "answer": "Jag kommer ej ge ut mina nycklar"
       },
-      "answer": "Synd att detta ej kunde hjälpa er.  <br>  Vänligen besök <a href='https://t.me/DGBSupport'>DGBSupport</a> på Telegram och beskriv ert bekymmer."
+      "answer": "Synd att detta ej kunde hjälpa er.  <br>  Vänligen besök <a href='https://t.me/DGBSupport' target='_blank'>DGBSupport</a> på Telegram och beskriv ert bekymmer."
     }
   }

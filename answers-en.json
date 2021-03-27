@@ -70,7 +70,7 @@
     }
   },
   "recover_digisweep": {
-    "answer": "To recover your funds<br><ol><li>Download and install coinomi on your device</li><li>Go to <a href='https://DigiSweep.digiassetX.com'>DigiSweep.digiassetX.com</a></li><li>Read the first page then hit Start</li><li>Enter your 12 to 24 word mnemonic in to the mnemonic field</li><li>Get a new receive address from coinomi and put that in the Coin Address field</li><li>If you have any DigiAssets place an address in the Asset Address filed for them to be sent to</li><li>Press scan Mnemonic and wait for it to finish</li><li>For most people you will want to select the Send button.  If you are technically inclined and have a core wallet you can chose the Build button</li></ol>",
+    "answer": "To recover your funds<br><ol><li>Download and install coinomi on your device</li><li>Go to <a href='https://DigiSweep.digiassetX.com' target='_blank'>DigiSweep.digiassetX.com</a></li><li>Read the first page then hit Start</li><li>Enter your 12 to 24 word mnemonic in to the mnemonic field</li><li>Get a new receive address from coinomi and put that in the Coin Address field</li><li>If you have any DigiAssets place an address in the Asset Address filed for them to be sent to</li><li>Press scan Mnemonic and wait for it to finish</li><li>For most people you will want to select the Send button.  If you are technically inclined and have a core wallet you can chose the Build button</li></ol>",
     "question": "Do you still need help?",
     "options": {
       "recover_go_coinomi": "Want to try the free method to recover DigiByte Go",
@@ -79,7 +79,7 @@
     }
   },
   "recover_go_coinomi": {
-    "answer": "<p>If you have any DigiAssets select that you want to try the easy method bellow</p><p>Install the Coinomi app for Android / iOS / PC / macOS, links available: <a href='https://www.coinomi.com/en/downloads/'>https://www.coinomi.com/en/downloads/</a></p><p>When prompted, enter your 12-word DigiByte Go recovery phrase. You will see a slider for Advanced Settings which gives you BIP39 options, leave this off for now.</p><p>Proceed to the next screen where it will get you to password-protect this on your phone, you may proceed with a password or drag the slider to the left to proceed without password-protection.</p><p>At the list of new coins to add, you can tap once on DigiByte then press the \"+\" to add a standard DigiByte coin to the wallet.  You will now be taken back to the main Coinomi screen for DigiByte.  Don't worry that no funds will be found.</p><p>Click the \"+\" symbol and select Add Coins.</p><p>At the list of new coins to add, you can tap once on DigiByte and a small cog will appear to the right-hand side of that row, tap on the cog.</p><p>At the list of new coins to add, you can tap once on DigiByte and a small cog will appear to the right-hand side of that row, tap on the cog.</p><p>Give it a new name, such as \"DigiByte Go\", and then enter a custom derivation path:</p><p>M/44H/0H/0H</p><p>Tap OK, and then tap the \"+\" down the bottom-right. You will now be taken back to the main Coinomi screen for DigiByte.  This time it will find your funds.</p><p>So you don't have to do this again click on DigiByte then Receive to get your first DigiByte address on the proper path.  Click the Copy symbol in the top right of the screen.  Now go back to the main window click DigiByte Go then Send.  Paste your address in to the To field.  Select Max then Continue.</p>",
+    "answer": "<p>If you have any DigiAssets select that you want to try the easy method bellow</p><p>Install the Coinomi app for Android / iOS / PC / macOS, links available: <a href='https://www.coinomi.com/en/downloads/' target='_blank'>https://www.coinomi.com/en/downloads/</a></p><p>When prompted, enter your 12-word DigiByte Go recovery phrase. You will see a slider for Advanced Settings which gives you BIP39 options, leave this off for now.</p><p>Proceed to the next screen where it will get you to password-protect this on your phone, you may proceed with a password or drag the slider to the left to proceed without password-protection.</p><p>At the list of new coins to add, you can tap once on DigiByte then press the \"+\" to add a standard DigiByte coin to the wallet.  You will now be taken back to the main Coinomi screen for DigiByte.  Don't worry that no funds will be found.</p><p>Click the \"+\" symbol and select Add Coins.</p><p>At the list of new coins to add, you can tap once on DigiByte and a small cog will appear to the right-hand side of that row, tap on the cog.</p><p>At the list of new coins to add, you can tap once on DigiByte and a small cog will appear to the right-hand side of that row, tap on the cog.</p><p>Give it a new name, such as \"DigiByte Go\", and then enter a custom derivation path:</p><p>M/44H/0H/0H</p><p>Tap OK, and then tap the \"+\" down the bottom-right. You will now be taken back to the main Coinomi screen for DigiByte.  This time it will find your funds.</p><p>So you don't have to do this again click on DigiByte then Receive to get your first DigiByte address on the proper path.  Click the Copy symbol in the top right of the screen.  Now go back to the main window click DigiByte Go then Send.  Paste your address in to the To field.  Select Max then Continue.</p>",
     "question": "Do you still need help?",
     "options": {
       "recover_digisweep": "Want to try the easy method",
@@ -139,7 +139,7 @@
     }
   },
   "wallet_bip39_standards_digibyte_mobile": {
-    "answer": "Unfortunately DigiByte Mobile is not a standard compliant wallet.  You can only restore funds from DigiByte Mobile on DigiByte mobile or use <a href='https://DigiSweep.digiassetX.com'>DigiSweep</a> to move to your new wallet",
+    "answer": "Unfortunately DigiByte Mobile is not a standard compliant wallet.  You can only restore funds from DigiByte Mobile on DigiByte mobile or use <a href='https://DigiSweep.digiassetX.com' target='_blank'>DigiSweep</a> to move to your new wallet",
     "question": "Do you still need help?",
     "options": {
       "done_no_help": "Yes",
@@ -187,7 +187,7 @@
     }
   },
   "wallet_core_update": {
-    "answer": "<ol><li>Shutdown your core wallet</li><li>Download and install the newest wallet at <a href='https://github.com/digibyte/digibyte/releases'>https://github.com/digibyte/digibyte/releases</a></li></ol>",
+    "answer": "<ol><li>Shutdown your core wallet</li><li>Download and install the newest wallet at <a href='https://github.com/digibyte-core/digibyte/releases' target='_blank'>https://github.com/digibyte-core/digibyte/releases</a></li></ol>",
     "question": "Have you run the wallet since the last fork?(July 2019)",
     "options": {
       "wallet_core_stuck": "Yes",
@@ -260,7 +260,7 @@
     }
   },
   "wallet_core_less_then_have": {
-    "answer": "Download Coinomi or another wallet on your phone then in the debug console run <span class='code'>walletpassphrase yourpassword 60</span> to unlock your wallet then <span class='code'>dumpwallet filename</span> to save your private keys to a file.  Open the file in a text editor and use either Coinomi's sweep function or <a href='https://DigiSweep.digiassetX.com'>https://DigiSweep.digiassetX.com</a> to sweep your funds to the new wallet.",
+    "answer": "Download Coinomi or another wallet on your phone then in the debug console run <span class='code'>walletpassphrase yourpassword 60</span> to unlock your wallet then <span class='code'>dumpwallet filename</span> to save your private keys to a file.  Open the file in a text editor and use either Coinomi's sweep function or <a href='https://DigiSweep.digiassetX.com' target='_blank'>https://DigiSweep.digiassetX.com</a> to sweep your funds to the new wallet.",
     "question": "Do you still need help?",
     "options": {
       "done_no_help": "Yes",
@@ -284,7 +284,7 @@
     }
   },
   "wallet_miner_core": {
-    "answer": "You likely have to many UTXOs in your wallet.  You can fix this by sending a smaller amount to yourself a few times or if you have been mining you may want to go to the console and type <span class='code'>dumpprivkey miningaddress</span>.  Then use <a href='https://DigiSweep.digiassetX.com'>DigiSweep.digiassetX.com</a> to send the funds from the provided private key back to your wallet.",
+    "answer": "You likely have to many UTXOs in your wallet.  You can fix this by sending a smaller amount to yourself a few times or if you have been mining you may want to go to the console and type <span class='code'>dumpprivkey miningaddress</span>.  Then use <a href='https://DigiSweep.digiassetX.com' target='_blank'>DigiSweep.digiassetX.com</a> to send the funds from the provided private key back to your wallet.",
     "question": "Do you still need help?",
     "options": {
       "done_no_help": "Yes",
@@ -292,7 +292,7 @@
     }
   },
   "wallet_miner_other": {
-    "answer": "Your wallet is probably no longer functional because there are to many UTXOs.  <a href='https://DigiSweep.digiassetX.com'>DigiSweep.digiassetX.com</a> can be used to move all your funds to a new address and fix this problem.",
+    "answer": "Your wallet is probably no longer functional because there are to many UTXOs.  <a href='https://DigiSweep.digiassetX.com' target='_blank'>DigiSweep.digiassetX.com</a> can be used to move all your funds to a new address and fix this problem.",
     "question": "Did this fix your problem?",
     "options": {
       "done": "Yes",
@@ -340,6 +340,6 @@
       "challenge":"<h1>Warning!</h1>There are scammers everywhere.<br>Never accept support in a private message even if they look like an admin.<br>Remember many eyes keep everyone honest.<hr>To continue type 'I wont give away my keys' in the box below",
       "answer": "I wont give away my keys"
     },
-    "answer": "Sorry this could not help you.  <br>  Please go to <a href='https://t.me/DGBSupport'>DGBSupport</a> on telegram and ask your question."
+    "answer": "Sorry this could not help you.  <br>  Please go to <a href='https://t.me/DGBSupport' target='_blank'>DGBSupport</a> on telegram and ask your question."
   }
 }
