@@ -7,6 +7,7 @@
 	<link href="style.css" rel="stylesheet">
 </head>
 <body>
+    <div id="popup-dialogue"></div>
     <div id="language_div">
         <label for="language">Language:</label>
         <select id="language">
@@ -32,106 +33,6 @@
             src="https://code.jquery.com/jquery-2.1.4.min.js"
             integrity="sha256-8WqyJLuWKRBVhxXIL1jBDD7SDxU936oZkCnxQbWwJVw="
             crossorigin="anonymous"></script>
-    <script>
-        let answers={};
-        let language='en';
-        let warnAnswer;
-
-        let lastUrl=window.location.href;
-        let getPage=(key)=>{
-            //load page
-            let page=answers[language][key]||answers.en[key]||answers[language]["done_no_help"];//find page.  If missing fall back to english then couldn't help
-            $("#answer").html(page.answer||"");
-            $("#question").html(page.question||"");
-            let html="";
-            for (let key in page.options) {
-                html+='<button class="option" key="'+key+'"><span>'+page.options[key]+'</span></button>';
-            }
-            $("#options").html(html);
-            if (page.warn!==undefined) {
-                $("#warnText").html(page.warn.challenge);
-                warnAnswer=page.warn.answer;
-                $(".shadow").show();
-            } else {
-                $(".shadow").hide();
-            }
-
-            //add the page to url
-            let url=window.location.href;
-            let last=url;
-            let end=url.indexOf('#');
-            if (end>0) url = url.substr(0,end); //remove everything after and including # if present
-            url+="#"+key;
-            console.log(url);
-            if (url!==last) window.location.href=url;
-            lastUrl=url;
-        }
-
-        //handle option click
-        $(document).on('click','.option',function(){
-            let key=$(this).attr('key');
-            $("#window").fadeOut(100,() => {
-                getPage(key);
-                $("#window").fadeIn(300, () => $("#window").animate({scrollTop:0}, "smooth"));
-            });
-        });
-
-        $(document).on('keyup',"#warnConfirm",function(){
-            if ($("#warnConfirm").val().toLowerCase()===warnAnswer.toLowerCase()) {
-                $(".shadow").hide();
-            }
-        });
-
-        //function to find current key
-        let getKey=()=>{
-            //find what page to load
-            let url=window.location.href;
-            let end=url.indexOf('#');
-            let key="start";
-            if (end>0) key = url.substr(end + 1);
-            if (answers.en[key]===undefined) key=start;      //if page doesn't exist go to start
-            return key;
-        }
-
-        //load data and start
-        $.getJSON('answers-en.json').then((data)=>{
-            //save answers
-            answers.en=data;
-
-            //load page
-            getPage(getKey());
-        });
-
-        //handle language change
-        $("#language").on('change',()=>{
-            language=$("#language").val();
-            if (answers[language]===undefined) {
-                $.getJSON('answers-'+language+'.json').then((data)=>{
-                    //save answers
-                    answers[language]=data;
-
-                    //load page
-                    getPage(getKey());
-                });
-            } else {
-                //load page
-                getPage(getKey());
-            }
-        });
-
-        //handle back and forward buttons
-        setInterval(()=>{
-            if (lastUrl!==window.location.href) getPage(getKey());
-        },200);
-
-
-        //show window
-        $(document).ready(()=>$("#question, #options").fadeIn(300));
-
-        //back to start
-        $(document).on("click", "#dgb-d", () => {
-            document.location.href = "./";
-        })
-    </script>
+    <script src="main.js"></script>
 </body>
 </html>

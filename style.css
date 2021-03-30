@@ -4,6 +4,10 @@
     src:            url("fonts/Roboto-ThinItalic.ttf");
 }
 
+h1,h2,h3,h4,h5,h6{
+    color: rgba(255,255,255,.8);
+}
+
 body {
     font-family: "Nunito Sans",sans-serif;
     color: white;
@@ -77,6 +81,10 @@ a, a:visited{
 }
 a:hover{
     color: #c5c5c5;
+}
+
+a.popup-info, a.popup-info:hover, a.popup-info:visited{
+    color: inherit;
 }
 
 #answer li::marker{
@@ -172,6 +180,69 @@ h2#troubleshooting{
     bottom:         5px;
     left:           50%;
     transform:      translate(-50%);
+}
+
+#popup-dialogue{
+    position:       fixed;
+    top:            50%;
+    left:           50%;
+    transform:      translate(-50%, -50%);
+    z-index:        8888;
+    max-width: 0;
+    max-height: 0;
+
+    border-radius: 5px;
+
+    background: rgba(255,255,255,.85);
+
+    color: #222;
+    font-weight: bold;
+    text-align: center;
+    overflow: auto;
+
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+#popup-dialogue p{
+    display:block;
+}
+#popup-dialogue a{
+    color: #06c;
+}
+#popup-dialogue a:visited{
+    color: #06c;
+}
+button.popup-close{
+    padding: 3px 10px;;
+    border: 1px solid #06c;
+    border-radius: 5px;
+    background: #06c;
+
+    font-size: 1.1em;
+    font-weight: 900;
+    color: white;
+
+    float: right;
+
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+button.popup-close:hover{
+    cursor: pointer;
+    background: #002352;
+}
+button.popup-close:focus{
+    outline: none;
+}
+
+a.popup-info{
+    padding-right: .5em;
+}
+a.popup-info::after{
+    content: "?";
+    color: #06c;
+    position: absolute;
+    transform:translateY(-.5em);
 }
 
 @media only screen and (max-width: 600px) {
