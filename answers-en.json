@@ -63,7 +63,7 @@
       }
     },
     "dead_go": {
-      "answer": "DigiByte Go is no functional. You can get your recovery phrase by opening your GO wallet. Then click Settings. Under wallets and integrations select/click the wallet name you want to get a backup phrase for. Click Backup. There is a couple of safety popups you need to click. If you have a spending password you will need to enter it. And there is your backup phrase words. Your wallet(s) can be recovered and we offer two different recovery options.",
+      "answer": "DigiByte Go is no functional. You can get your recovery phrase by opening your GO wallet. Then click Settings. Under wallets and integrations select/click the wallet name you want to get a backup phrase for. Click Backup. There is a couple of safety popups you need to click. If you have a spending password you will need to enter it. And there are your backup phrase words. Your wallet(s) can be recovered and we offer two different recovery options.",
       "question": "Which recovery option would you like to try?",
       "options": {
         "recover_digisweep": "Willing to pay 1% for simple recovery",
